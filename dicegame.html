@@ -47,11 +47,11 @@
       <h1>PISASU</h1>
       <div class="dice">
         <p>Player 1</p>
-        <img src=".//images/dice6.png" alt="image-1" class="img1" />
+        <img src="dice6.png" alt="image-1" class="img1" />
       </div>
       <div class="dice">
         <p>Player 2</p>
-        <img src=".//images/dice6.png" alt="image-2" class="img2" />
+        <img src="dice6.png" alt="image-2" class="img2" />
       </div>
       <h2 class="wins">The Winner is: <span></span></h2>
     </div>
@@ -59,13 +59,13 @@
     <script>
       var randomNumber1 = Math.floor(Math.random() * 6) + 1; //it wil give  1 to 6
       var randomDiceImage = "dice" + randomNumber1 + ".png"; //dice 1 to dice 6
-      var randomImageSource = "images/" + randomDiceImage; //to append the folder name before
+      var randomImageSource = randomDiceImage; //to append the folder name before
       var img1 = document.querySelectorAll("img")[0];
       img1.setAttribute("src", randomImageSource);
       /* THis is for Dice 2 */
       var randomNumber2 = Math.floor(Math.random() * 6) + 1; //it wil give  1 to 6
       var randomDiceImage2 = "dice" + randomNumber2 + ".png"; //dice 1 to dice 6
-      var randomImageSource2 = "images/" + randomDiceImage2; //to append the folder name before
+      var randomImageSource2 = randomDiceImage2; //to append the folder name before
       var img2 = document.querySelectorAll("img")[1];
       img2.setAttribute("src", randomImageSource2);
 
